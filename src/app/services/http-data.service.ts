@@ -7,7 +7,6 @@ import {
 import { ErrorHandler, Injectable } from '@angular/core';
 import { catchError, Observable, retry, throwError } from 'rxjs';
 import { Student } from '../models/student';
-
 @Injectable({
   providedIn: 'root',
 })

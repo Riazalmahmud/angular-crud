@@ -10,11 +10,13 @@ import { MatInputModule } from '@angular/material/input';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import {MatTableModule} from '@angular/material/table';
 import { StudentComponent } from './student/student.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatTableDataSource } from '@angular/material/table';
+import { HttpDataService } from './services/http-data.service';
 @NgModule({
-  declarations: [
-    AppComponent,
-    StudentComponent
-  ],
+  declarations: [AppComponent, StudentComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -25,9 +27,14 @@ import { StudentComponent } from './student/student.component';
     MatButtonModule,
     MatInputModule,
     MatPaginatorModule,
-    MatTableModule
+    MatTableModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatPaginator,
+    MatTableDataSource,
+    HttpDataService,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
