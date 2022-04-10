@@ -1,0 +1,9 @@
+{
+  "students": [
+    { "id": 1, "name": "riaz", "age": "21", "address": "dotterhat", "email": "riaz@gmail.com", "mobile": "01555464671" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
+}
